@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Cycled Hours Calculator</h1>
+
+      <div class="row">
+        <a href="https://tauri.app" target="_blank">
+          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
+        </a>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          target="_blank"
+        >
+          <img
+            src="/assets/javascript.svg"
+            class="logo vanilla"
+            alt="JavaScript logo"
+          />
+        </a>
+      </div>
+
+      <form class="row" id="greet-form">
+        <input id="greet-input" placeholder="Enter a name..." />
+        <button type="submit">Greet</button>
+      </form>
+      <p id="greet-msg"></p>
+    </div>
+
+
+    <!--TABLE OF HOURS-->
+    <section>
+      <div id="table-div">
+        <div id="add-row-div">
+          <button id="add-row-button" onclick="addTableRow()">+</button>
+        </div>
+        <table id="hours-table">
+          <tr>
+            <th>Day</th>
+            <th>Hrs Worked</th>
+            <th>Cycle Hours</th>
+            <th>Total Hrs Avail Tomorrow</th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="date"
+                id="start"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+            </td>
+            <td>
+              <input type="number" name="" id="" />
+            </td>
+            <td>
+              <input type="number" name="" id="" />
+            </td>
+            <td>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript" src="/main.js" defer></script>
+</html>
