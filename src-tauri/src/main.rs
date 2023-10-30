@@ -1,3 +1,23 @@
+/*
+i32 f32         f32         f32
+Day Hrs_Worked	Cycle_Hours	Total_Hrs_avail_tomorrow	
+1	[10]        70          [60](b-c)	
+2	8			
+3	9			
+4	10			
+5	7			
+6	9			
+7	10			
+8	8                       d+(day-7[b])
+9	4                       12
+10	12			
+11				
+12	Hour:Minutes			
+13				
+14				
+
+*/
+
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
