@@ -56,5 +56,6 @@ function addTableRow(){
   newTableCell.appendChild(newAvailHrsTomorrow);
   newTableRow.appendChild(newTableCell);
 
+  //add row to table
   tableRef.appendChild(newTableRow);
 }
